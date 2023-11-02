@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container{
+    position: relative;
+    width: 800px;
+    height: 500px;
+    margin: 20px;
+    box-shadow: 0 5px 45px rgba(0,0,0,15);
+    border-radius: 20px;
+}
+.gif{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+}
+.formBx{
+    position: relative;
+    margin-left: 50%;
+    height: 100%;
+    background: #25A4B8;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 3px 15px rgba(0,0,0,15);
+}
+.formBx .h1{
+    position: absolute;
+    margin: 25px;
+    color: #fff;
+}
+.form{
+    margin: 20px;
+    margin-top: 120px;
+}
+input{
+    width: 100%;
+    margin-bottom: 20px;
+    outline: none;
+    font-size: 15px;
+    border: none;
+    border-radius: 15px;
+    padding: 10px;
+}
+.login{
+    border: none;
+    color: #fff;
+    max-width: 100%;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 70px;
+}
+a{
+    text-decoration-line: none;
+}
+.alogin{
+    padding: 10px 20px;
+    background: #86C6EA;
+    margin-left: 20px;
+    color: #fff;
+    cursor: pointer;
+    max-width: 150px;
+    border-radius: 15px;
+}
+.flogin{
+    padding: 10px 20px;
+    background: #86C6EA;
+    margin-left: 20px;
+    color: #fff;
+    cursor: pointer;
+    max-width: 150px;
+    border-radius: 15px;
+}
+.eye{
+    position: absolute;
+    margin-top: 12px;
+    margin-left: 325px;
+    cursor: pointer;
+    color: #444;
+}
+#hide1
+{
+  display: none;
+}
+.input-field{
+    display: flex;
+}

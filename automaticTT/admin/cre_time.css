@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.nav
+{
+    position: fixed;
+    inset: 20px 0 20px 20px;
+    width: 75px;
+    background: #25A4B8;
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 5px 10px rgba(0,0,0,15);
+    border-radius: 15px;
+}
+.nav.open
+{
+    width: 250px;
+}
+.nav .menuToggle
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    border-bottom: 1px solid rgb(0,0,0,0.25);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 23px 
+}
+.nav .menuToggle::before
+{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background: #333;
+    transform: translateY(-8px);
+    transition: 0.5s;
+}
+.nav.open .menuToggle::before
+{
+    transform: translateY(0px) rotate(45deg);
+}
+.nav .menuToggle::after
+{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background: #333;
+    transform: translateY(8px);
+    transition: 0.5s;
+    box-shadow: 0 -8px 0 #333;
+}
+.nav.open .menuToggle::after
+{
+    transform: translateY(0px) rotate(-45deg);
+    box-shadow: 0 0 0 #333;
+}
+.nav ul 
+{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+.nav ul li
+{
+    list-style: none;
+    position: relative;
+    width: 100%;
+    height: 60px;
+    padding: 0 10px;
+    transition: 0.5s;
+}
+.nav ul li.active
+{
+    transform: translateX(30px);
+}
+.nav.open ul li.active
+{
+    transform: translateX(10px);
+}
+.nav ul li a
+{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    text-decoration: none;
+}
+.nav ul li a .icon
+{
+    position: relative;
+    display: block;
+    min-width: 55px;
+    height: 55px;
+    line-height: 60px;
+    transition: 0.5s;
+    border-radius: 10px;
+    font-size: 1.75em;
+    color: #222;
+}
+.nav ul li.active a .icon 
+{
+    color: #fff;
+    background: var(--clr);
+}
+.nav ul li a .icon::before
+{
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--clr);
+    filter: blur(8px);
+    opacity: 0;
+    transition: 0.5s;
+}
+.nav ul li.active a .icon::before
+{
+    opacity: 0.5;
+}
+.nav ul li a .text
+{
+    position: relative;
+    padding: 0 15px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    color: #333;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+.nav.open ul li a .text
+{
+    opacity: 1;
+    visibility: visible;
+}
+.nav ul li.active a .text
+{
+    color: var(--clr);
+}
+.div
+{
+    position: absolute;
+    margin-left: 300px;
+    margin-top: 50px;
+}
+.div1{
+    margin-left: 300px;
+    margin-top: 50px;
+}
+.btn
+{
+    display: inline-flex;
+    height: 50px;
+    padding: 0;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    overflow: hidden;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    box-shadow: 0 5px 10px rgba(0,0,0,15);
+    margin-left: 770px;
+    margin-top: 50px;
+}
+.btn:hover
+{
+    background: #8FE9FF;
+}
+.btn1
+{
+    display: inline-flex;
+    height: 50px;
+    padding: 0;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    overflow: hidden;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    box-shadow: 0 5px 10px rgba(0,0,0,15);
+}
+.btn1:hover
+{
+    background: #8FE9FF;
+}
+.bt
+{
+    display: inline-flex;
+    height: 40px;
+    width: 100px;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    overflow: hidden;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+.bt:hover
+{
+    cursor: pointer;
+    background: #028b0d;
+    color: #fff;
+}
+.bttn
+{
+    display: inline-flex;
+    height: 2em;
+    padding: 0;
+    color: red;
+    background: none;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    overflow: hidden;
+    font-family: 'Quicksand', sans-serif;
+}
+.bttn:hover
+{
+    background: red;
+    color: #fff;
+    cursor: pointer;
+}
+.bttn1
+{
+    display: inline-flex;
+    height: 2em;
+    padding: 0;
+    background: none;
+    color: #8FE9FF;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    overflow: hidden;
+    font-family: 'Quicksand', sans-serif;
+}
+.bttn1:hover
+{
+    background: #8FE9FF;
+    color: #fff;
+    cursor: pointer;
+}
+.btntext,.btnicon
+{
+    display: inline-flex;
+    align-items: center;
+    padding: 0 10px;
+    height: 100%;
+    font-family: Times New Roman;
+}
+a
+{
+    text-decoration: none;
+}
+.btnicon
+{
+    font-size: 1.5em;
+    background: rgb(0,0,0,0.25);
+}
+.content-table
+{
+    border-collapse: collapse;
+    margin: 10px 10px;
+    font-size: 0.9em;
+    box-shadow: 0 5px 10px rgba(0,0,0,15);
+    border-radius: 15px;
+    overflow: hidden;
+}
+.content-table thead tr
+{
+    height: 50px;
+    background: #25A4B8;
+    color: #fff;
+}
+.content-table tbody tr{
+    border-bottom: 1px solid #dddddd;
+}
+th{
+    font-family: Times New Roman;
+}
+td
+{
+    text-align: center;
+    height: 100px;
+    font-family: Times New Roman;
+}
+.h1{
+    margin-bottom: 50px;
+    color: #333;
+    font-size: 45px;
+    font-family: Times New Roman;
+}
+h3
+{
+    font-size: 30px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-family: Times New Roman;
+}
+h4{
+    font-family: Times New Roman;
+}
+.box{
+    height: 100%;
+    width: 550px;
+    padding: 50px;
+    margin-left: 500px;
+    margin-top: 50px;
+    box-shadow: 0 5px 10px rgba(0,0,0,15);
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+form
+{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+}
+input
+{
+    width: 100%;
+    margin-bottom: 20px;
+    outline: none;
+    font-size: 15px;
+    border: none;
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: 0 5px 10px rgba(0,0,0,15);
+}
+textarea
+{
+    width:100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    outline:none;
+    font-size: 16px;
+    border: 1px solid #333;
+    box-shadow: 0 5px 10px rgba(0,0,0,15);
+}
+.btn2{
+    background: #8FE9FF;
+    width: 70%;
+    margin-left: 65px;
+}
+.btn3{
+    background: #86C6EA;
+    width: 70%;
+    margin-left: 65px;
+}
+select{
+    width: 100%;
+    margin-bottom: 20px;
+    outline: none;
+    font-size: 15px;
+    border: none;
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: 0 5px 10px rgba(0,0,0,15);
+}
