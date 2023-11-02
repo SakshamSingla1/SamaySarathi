@@ -12,7 +12,7 @@
 		<div class="gif">
 			<lottie-player src="https://assets5.lottiefiles.com/packages/lf20_i7ooqm2q.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
 		</div>
-		<div class="formBx">
+		<div class="formBx" style="background:#27DEBF;">
 		<h1 class="h1" style="color: #219884; font-size: 36px; text-align: center; margin-top: 0px;">SamaySarathi</h1>
 			<h1 class="h1" style="margin-top:40px">Student Login</h1>
 			<form class="form" action="std_login.php" method="post" enctype="multipart/form-data">
